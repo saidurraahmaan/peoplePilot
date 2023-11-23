@@ -1,16 +1,19 @@
 spring:
+  profiles:
+    active: dev
   data:
     jpa:
       repositories:
         bootstrap-mode: default
   datasource:
-    password: saidur
-    url: jdbc:postgresql://localhost:5432/people_pilot
-    username: postgres
+    password: configure_in_application-dev
+    url: configure_in_application-dev
+    username: configure_in_application-dev
+
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     defer-datasource-initialization: true
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
