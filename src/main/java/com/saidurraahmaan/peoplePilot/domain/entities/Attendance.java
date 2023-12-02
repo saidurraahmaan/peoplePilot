@@ -17,7 +17,6 @@ public class Attendance {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)
     private Employee employee;
@@ -31,6 +30,5 @@ public class Attendance {
 
     @Column(name = "check_out_time")
     private LocalTime checkOutTime;
-
 
 }
