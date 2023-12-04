@@ -5,17 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">PeoplePilot</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
 </head>
 <body>
 <main class="d-flex flex-nowrap main-container">
     <div th:replace="~{/component/sidebar}"></div>
     <div class="b-example-divider b-example-vr"></div>
-    <div  class="text-bg-dark w-100">
+    <div class="text-bg-dark w-100 p-2">
         <div layout:fragment="content">
-
         </div>
     </div>
 </main>
