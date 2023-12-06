@@ -8,5 +8,4 @@ public enum Department {
     MANAGER,
     CTO,
 
-
 }
