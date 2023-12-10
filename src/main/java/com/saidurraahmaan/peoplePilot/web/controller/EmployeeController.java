@@ -26,10 +26,10 @@ public class EmployeeController {
         var isAdded = employeeService.addEmployee(employee);
 
         if (isAdded) {
-            return ResponseEntity.ok(true); // Return 200 OK if the employee is successfully added
+            return ResponseEntity.ok(true);
         } else {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(false);
-            // Return 500 Internal Server Error if the employee addition fails
+
         }
     }
 

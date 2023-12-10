@@ -16,13 +16,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Boolean addEmployee(EmployeeDTO employee) {
+    public boolean addEmployee(EmployeeDTO employee) {
         var employeeEntity = new Employee();
         employeeEntity.setName(employee.getName());
         employeeEntity.setSalary(employee.getSalary());
         employeeEntity.setDepartment(employee.getDepartment());
         employeeRepository.save(employeeEntity);
-
         return true;
     }
 }
