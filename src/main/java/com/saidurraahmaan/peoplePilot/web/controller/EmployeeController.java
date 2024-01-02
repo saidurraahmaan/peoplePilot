@@ -14,9 +14,7 @@ import com.saidurraahmaan.peoplePilot.domain.services.EmployeeService;
 @RequestMapping("/employee")
 public class EmployeeController {
 
-
     private final EmployeeService employeeService;
-
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
@@ -29,8 +27,6 @@ public class EmployeeController {
             return ResponseEntity.ok(true);
         } else {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(false);
-
         }
     }
-
 }

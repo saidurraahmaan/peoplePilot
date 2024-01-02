@@ -20,6 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         var employeeEntity = new Employee();
         employeeEntity.setName(employee.getName());
         employeeEntity.setSalary(employee.getSalary());
+        employeeEntity.setRole(employee.getRole());
         employeeEntity.setDepartment(employee.getDepartment());
         employeeRepository.save(employeeEntity);
         return true;
